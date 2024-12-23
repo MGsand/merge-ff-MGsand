@@ -2,11 +2,11 @@ pipeline{
     agent any
     
     stages{
-        stage('Checkpoint'){
+        stage('Build'){
             steps{
              echo 'Building...'            }
         }
-        stage('build image'){
+        stage('Test'){
             steps{
                 script{
                 
@@ -22,4 +22,5 @@ pipeline{
             }
         }
     }
+}
 }
