@@ -11,7 +11,7 @@ pipeline{
             steps{
                 script{
                     def imageName = "my-app-image:${BUILD_NUMBER}"
-                    sh "docker build -t ${imageName} ./home/ipa/ip216s12/Desktop/jenkins/Dockerfile "
+                    sh "docker build -t ${imageName} ."
                     sh "docker tag ${imageName} my-app-image:latest"
                 }
             }
