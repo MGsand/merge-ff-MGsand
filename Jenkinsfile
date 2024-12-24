@@ -11,9 +11,9 @@ pipeline{
         stage('Test'){
             steps{
                 script{
-                    def imageName = "my-app-image:${BUILD_NUMBER}"
-                    sh "docker build -t ${imageName} ." 
-                    sh "docker tag ${imageName} my-app-image:latest"
+                   # def imageName = "my-app-image:${BUILD_NUMBER}"
+                   # sh "docker build -t ${imageName} ." 
+                  #  sh "docker tag ${imageName} my-app-image:latest"
                  echo 'Bg...'
                 }
             }
